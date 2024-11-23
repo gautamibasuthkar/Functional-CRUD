@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create New Item</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Create New Item</h1>
+  </header>
+  <main>
+    <form>
+        <label for="title">Title (Max 50 characters):</label>
+        <input type="text" id="title" name="title" maxlength="50" placeholder="Enter the title" required />
+        <small id="title-count">0/50</small>
+      
+        <label for="description">Description (Max 200 characters):</label>
+        <textarea id="description" name="description" maxlength="200" placeholder="Enter the description" required></textarea>
+        <small id="description-count">0/200</small>
+      
+        <button type="submit">Submit</button>
+      </form>      
+  </main>
+
+  <!-- Back to Home Button -->
+  <a href="index.html" class="back-to-home">Back to Home Page</a>
+</main>
+
+  <script src="script.js"></script>
+</body>
+</html>
